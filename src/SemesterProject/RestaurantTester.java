@@ -1,3 +1,5 @@
+package SemesterProject;
+
 /**
  * CS2336 Semester Project
  * by Raul & Nicholas

@@ -1,3 +1,4 @@
+package SemesterProject;
 
 /**
  * An activity in the restaurant.

@@ -1,3 +1,4 @@
+package SemesterProject;
 
 public class ServiceActivity extends Activity
 {
