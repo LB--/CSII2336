@@ -5,7 +5,7 @@
  * ngb130030
  */
 
-public class Restaurant
+public class RestaurantTester
 {
 	public static void main(String[] args)
 	{
