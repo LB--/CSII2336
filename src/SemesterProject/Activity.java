@@ -108,7 +108,6 @@ public abstract class Activity
 	 * This method is implemented by deriving classes.
 	 * @return ???
 	 */
-	@Override
 	public abstract String getMessage(char c);
 
 	/**
