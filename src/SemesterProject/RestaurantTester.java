@@ -9,6 +9,10 @@ package SemesterProject;
 
 public class RestaurantTester
 {
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args)
 	{
 		//...
