@@ -1,18 +1,16 @@
 package SemesterProject;
 
-import javax.swing.JLabel;
-
 public class Table {
 	
-	private JLabel jlbllabel;
+	private String label;
 	private char status;
 	
-	public Table(String s){
-		//..
+	public Table(String label){
+		
 	}
 	
-	public void setLabel(String s){
-		//..
+	public void setLabel(String label){
+		label = label;
 	}
 	
 	public void setStatus(String s){
