@@ -9,21 +9,19 @@ public class Table {
 
 	}
 
+	public String getLabel() {
+		return label;
+	}
+		
 	public void setLabel(String label) {
 		this.label = label;
-	}
-
-	public void setStatus(String s) {
-		// ..
-	}
-
-	public String getLabel() {
-		String label = null;
-		return label;
 	}
 
 	public char getStatus() {
 		return status;
 	}
-
+		
+	public void setStatus(char status) {
+		this.status = status;
+	}
 }
