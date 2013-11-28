@@ -4,20 +4,23 @@ package SemesterProject;
  * An activity in the restaurant.
  * @author Nicholas
  */
-public abstract class Activity
-{
+public abstract class Activity {
+	
 	/**
 	 * The name of the activity.
 	 */
 	private String name;
+	
 	/**
 	 * The server responsible for this activity
 	 */
 	private Server server;
+	
 	/**
 	 * The table this activity belongs to.
 	 */
 	private Table table;
+	
 	/**
 	 * ???
 	 */
@@ -26,8 +29,9 @@ public abstract class Activity
 	/**
 	 * Default constructor, does nothing.
 	 */
-	public Activity()
-	{
+	
+	public Activity() {
+		
 	}
 
 	/**
@@ -41,32 +45,31 @@ public abstract class Activity
 	 * Sets the name of this activity.
 	 * @param n The new name for this activity.
 	 */
-	public void setName(String n)
-	{
+	public void setName(String n) {
 		name = n;
 	}
+	
 	/**
 	 * Sets the server responsible for this activity.
 	 * @param s The new server responsible for this activity.
 	 */
-	public void setServer(Server s)
-	{
+	public void setServer(Server s) {
 		server = s;
 	}
+	
 	/**
 	 * Sets the table associated with this activity.
 	 * @param t The new table associated with this activity.
 	 */
-	public void setTable(Table t)
-	{
+	public void setTable(Table t) {
 		table = t;
 	}
+	
 	/**
 	 * ???
 	 * @param p ???
 	 */
-	public void setPary(char p)
-	{
+	public void setPary(char p) {
 		party = p;
 	}
 
@@ -74,32 +77,31 @@ public abstract class Activity
 	 * Retrieves the name of this activity.
 	 * @return The name of this activity.
 	 */
-	public String getName()
-	{
+	public String getName() {
 		return name;
 	}
+	
 	/**
 	 * Retrieves the server responsible for this activity.
 	 * @return The server responsible for this activity.
 	 */
-	public Server getServer()
-	{
+	public Server getServer() {
 		return server;
 	}
+	
 	/**
 	 * Retrieves the table associated with this activity.
 	 * @return The table associated with this activity.
 	 */
-	public Table getTable()
-	{
+	public Table getTable() {
 		return table;
 	}
+	
 	/**
 	 * ???
 	 * @return ???
 	 */
-	public char getParty()
-	{
+	public char getParty() {
 		return party;
 	}
 
