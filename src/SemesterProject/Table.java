@@ -11,12 +11,7 @@ public class Table {
 	 * @param status of the table
 	 */
 	public Table(String label, char status) {
-		Table table1 = new Table(label, status);
-		Table table2 = new Table(label, status);
-		Table table3 = new Table(label, status);
-		
-		
-		
+		//...
 	}
 
 	/**
