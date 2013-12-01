@@ -3,7 +3,7 @@ package SemesterProject;
 public class Server {
 	
 	private String name;
-	private int [] listOfTables;
+	private int [] tables;
 	
 	
 	/**
@@ -11,9 +11,10 @@ public class Server {
 	 * @param name of the the server
 	 * @param list of the tables
 	 */
-	public Server(String name, int [] listOfTables){
+	public Server(String name, int [] tables){
 		this.name = name;
-		this.listOfTables = listOfTables;
+		this.tables = new int []{1, 2, 3, 4, 5, 6, 7, 8, 9, 
+				10, 11, 12, 13, 14, 15, 16, 17, 18};
 	}
 	
 	/**
