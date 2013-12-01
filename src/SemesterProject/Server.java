@@ -4,26 +4,29 @@ public class Server {
 	
 	private String name;
 	
-	public Server(String n, int [] s){
-		//...
+	
+	/**
+	 * 
+	 * @param name of the the server
+	 * @param ?
+	 */
+	public Server(String name, int [] numOfServers){
+		this.name = name;
 	}
 	
 	public void setName(String name){
-		//..
+		this.name = name;
 	}
 	
 	public String getName(){
 		return name;
-		//...
     }
 	
 	public String getName(String name){
 		return name;
-		//..
 	}
 	
 	public String toString(){
 		return name;
-		//..
 	}
 }

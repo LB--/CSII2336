@@ -11,7 +11,8 @@ public class Table {
 	 * @param status of the table
 	 */
 	public Table(String label, char status) {
-		//...
+		this.label = label;
+		this.status = status;
 	}
 
 	/**
