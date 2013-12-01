@@ -20,10 +20,6 @@ public class Server {
 	
 	public String getName(){
 		return name;
-    }
-	
-	public String getName(String name){
-		return name;
 	}
 	
 	public String toString(){
