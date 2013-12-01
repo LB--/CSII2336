@@ -16,15 +16,15 @@ public class Table {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * returns the label
+	 * @return the label
 	 */
 	public String getLabel() {
 		return label;
 	}
 	
 	/**
-	 * 
+	 * sets the label
 	 * @param label
 	 */
 	public void setLabel(String label) {
@@ -32,15 +32,15 @@ public class Table {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * returns the status
+	 * @return the status
 	 */
 	public char getStatus() {
 		return status;
 	}
 		
 	/**
-	 * 
+	 * sets the status
 	 * @param status
 	 */
 	public void setStatus(char status) {
