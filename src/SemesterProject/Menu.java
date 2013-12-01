@@ -26,7 +26,7 @@ public class Menu {
 	
 	/**
 	 * 
-	 * @param the code of the item to get
+	 * @param code the code of the item to get
 	 * @return the item associated with the code
 	 */
 	public Item getItem(String code){
