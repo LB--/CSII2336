@@ -63,6 +63,7 @@ public class RestaurantTester {
 									case 'O': { //place order
 										//...
 									} break;
+									default: continue ActivityLoop; //invalid
 								}
 							} break;
 							case 2: break ActivityLoop; //quit
