@@ -54,12 +54,27 @@ public class Table {
 		this.status = status;
 	}
 
+	/**
+	 * ...
+	 */
 	public void seatParty(int partySize) throws IllegalStateException {
 		if(status == Status.Ready){
 			party = partySize;
 			setStatus(Status.Ordering);
 		}
 		else throw new IllegalStateException("Cannot seat party while table has status "+status);
+	}
+	/**
+	 * ...
+	 */
+	public void service() throws IllegalStateException {
+		if(status == Status.Waiting){
+			setStatus(Status.Eating);
+		}
+		else if(status == Status.Dirty){
+			setStatus(Status.Ready);
+		}
+		else throw new IllegalStateException("Cannot service table while table has status "+status);
 	}
 
 	@Override
@@ -77,9 +92,13 @@ public class Table {
 		 */
 		Ready,
 		/**
-		 * The table s occupied and in the process of ordering.
+		 * The table is occupied and in the process of ordering.
 		 */
 		Odering,
+		/**
+		 * The table has ordered and is waiting to be serviced.
+		 */
+		Waiting,
 		/**
 		 * The table is waiting for food and/or eating.
 		 */

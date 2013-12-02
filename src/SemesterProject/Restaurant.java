@@ -74,4 +74,14 @@ public class Restaurant {
 		}
 		else throw new IllegalArgumentException("No such table: "+tableNum);
 	}
+	/**
+	 * ...
+	 */
+	public void serviceTable(int tableNum) throws IllegalArgumentException {
+		Table t = tables.get(tableNum);
+		if(t != null){
+			t.service();
+		}
+		else throw new IllegalArgumentException("No such table: "+tableNum);
+	}
 }

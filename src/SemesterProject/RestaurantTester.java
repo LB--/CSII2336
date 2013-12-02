@@ -55,10 +55,10 @@ public class RestaurantTester {
 										r.seatTable(table, party);
 									} break;
 									case 'S': { //service
-										//...
+										r.serviceTable(table);
 									} break;
 									case 'C': { //checkout
-										//...
+										//
 									} break;
 									case 'O': { //place order
 										//...
