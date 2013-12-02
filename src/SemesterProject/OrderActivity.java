@@ -3,14 +3,14 @@ package SemesterProject;
 public class OrderActivity extends Activity {
 	private Menu.Item[] items;
 
-	public OrderActivity(Restaurant r, int tableNum, Menu.Item[] order){
+	public OrderActivity(Restaurant r, int tableNum, Menu.Item[] orders){
 		super(r.tableFor(tableNum));
-		items = order;
+		items = orders;
 	}
 
 	@Override
 	public void process(){
-		//...
+		getTable().placeOrders(items);
 	}
 
 	@Override

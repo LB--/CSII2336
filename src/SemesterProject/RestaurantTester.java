@@ -58,10 +58,14 @@ public class RestaurantTester {
 										r.process(new ServiceActivity(r, table));
 									} break;
 									case 'C': { //checkout
-										//
+										r.process(new CheckActivity(r, table));
 									} break;
 									case 'O': { //place order
-										//...
+										List<Menu.Item> order = new ArrayList<>();
+										while(act.hasNext()){
+											order.add(r.getMenu().getItem(act.next()));
+										}
+										r.process(new OrderActivity(r, table, (Menu.Item[])order.toArray(new Menu.Item[0])));
 									} break;
 									default: continue ActivityLoop; //invalid
 								}

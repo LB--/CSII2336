@@ -17,6 +17,10 @@ public class Table {
 	 * The size of the party seated at this table.
 	 */
 	private int party = 0;
+	/**
+	 *
+	 */
+	private List<Menu.Item> orders = new ArrayList<>();
 
 	/**
 	 * 
@@ -92,9 +96,22 @@ public class Table {
 			setStatus(Status.Eating);
 		}
 		else if(status == Status.Dirty){
+			orders = new ArrayList<>();
 			setStatus(Status.Ready);
 		}
 		else throw new IllegalStateException("Cannot service table while table has status "+status);
+	}
+	/**
+	 * ...
+	 */
+	public void placeOrders(Menu.Item[] items){
+		if(status == Status.Ordering){			
+			for(Menu.Item i : items){
+				orders.add(i);
+			}
+			setStatus(Status.Waiting);
+		}
+		else throw new IllegalStateException("Cannot place orders while table has status "+status);
 	}
 
 	@Override
