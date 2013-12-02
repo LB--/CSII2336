@@ -15,6 +15,6 @@ public class OrderActivity extends Activity {
 
 	@Override
 	public String toString(){
-		//...
+		return "Order";
 	}
 }

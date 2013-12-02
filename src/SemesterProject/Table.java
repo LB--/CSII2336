@@ -105,13 +105,23 @@ public class Table {
 	 * ...
 	 */
 	public void placeOrders(Menu.Item[] items){
-		if(status == Status.Ordering){			
+		if(status == Status.Ordering){
 			for(Menu.Item i : items){
 				orders.add(i);
 			}
 			setStatus(Status.Waiting);
 		}
 		else throw new IllegalStateException("Cannot place orders while table has status "+status);
+	}
+	/**
+	 * ...
+	 */
+	public void checkout(){
+		if(status == Status.Eating){
+			party = 0;
+			setStatus(Status.Dirty);
+		}
+		else throw new IllegalStateException("Cannot checkout while table has status "+status);
 	}
 
 	@Override

@@ -7,11 +7,11 @@ public class CheckActivity extends Activity {
 
 	@Override
 	public void process(){
-		//...
+		getTable().checkout();
 	}
 
 	@Override
 	public String toString(){
-		//...
+		return "Check";
 	}
 }

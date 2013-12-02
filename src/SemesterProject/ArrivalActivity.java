@@ -15,6 +15,6 @@ public class ArrivalActivity extends Activity {
 
 	@Override
 	public String toString(){
-		//...
+		return "Arrival";
 	}
 }
