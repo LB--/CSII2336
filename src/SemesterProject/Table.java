@@ -2,14 +2,14 @@ package SemesterProject;
 
 public class Table {
 	private String label;
-	private char status;
+	private Status status;
 
 	/**
 	 * 
 	 * @param label of the table
 	 * @param status of the table
 	 */
-	public Table(String label, char status) {
+	public Table(String label, Status status) {
 		this.label = label;
 		this.status = status;
 	}
@@ -34,7 +34,7 @@ public class Table {
 	 * returns the status
 	 * @return the status
 	 */
-	public char getStatus() {
+	public Status getStatus() {
 		return status;
 	}
 
@@ -42,7 +42,30 @@ public class Table {
 	 * sets the status
 	 * @param status
 	 */
-	public void setStatus(char status) {
+	public void setStatus(Status status) {
 		this.status = status;
+	}
+
+	/**
+	 * Represents the status of a table.
+	 */
+	public static enum Status
+	{
+		/**
+		 * The table is unoccupied and is clean.
+		 */
+		Ready,
+		/**
+		 * The table s occupied and in the process of ordering.
+		 */
+		Odering,
+		/**
+		 * The table is waiting for food and/or eating.
+		 */
+		Eating,
+		/**
+		 * The table is unoccupied and requires cleaning.
+		 */
+		Dirty;
 	}
 }

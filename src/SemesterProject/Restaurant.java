@@ -37,10 +37,10 @@ public class Restaurant {
 					t.add(n);
 					if(tables.get(n) == null)
 					{
-						tables.put(n, new Table("Table #"+n, 0));
+						tables.put(n, new Table("Table #"+n, Table.Status.Ready));
 					}
 				}
-				servers.add(new Server(name, t.toArray(new int[0])));
+				servers.add(new Server(name, (int[])t.toArray(new int[0])));
 			}
 		}
 	}
