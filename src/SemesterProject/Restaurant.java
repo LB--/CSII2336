@@ -63,4 +63,15 @@ public class Restaurant {
 	public void printServers(PrintStream out){
 		//...
 	}
+
+	/**
+	 * ...
+	 */
+	public void seatTable(int tableNum, int partySize) throws IllegalArgumentException {
+		Table t = tables.get(tableNum);
+		if(t != null){
+			t.seatParty(partySize);
+		}
+		else throw new IllegalArgumentException("No such table: "+tableNum);
+	}
 }

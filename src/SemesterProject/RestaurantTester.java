@@ -47,7 +47,23 @@ public class RestaurantTester {
 							case 1: { //activity
 								System.out.print("Enter activity: ");
 								Scanner act = new Scanner(in.nextLine());
-								//...
+								int table = Integer.parseInt(act.next().substring(1));
+								String command = act.next();
+								switch(command.charAt(0)){
+									case 'P': { //seat party
+										int party = Integer.parseInt(command.substring(1));
+										r.seatTable(table, party);
+									} break;
+									case 'S': { //service
+										//...
+									} break;
+									case 'C': { //checkout
+										//...
+									} break;
+									case 'O': { //place order
+										//...
+									} break;
+								}
 							} break;
 							case 2: break ActivityLoop; //quit
 							default: conditnue ActivityLoop; //invalid

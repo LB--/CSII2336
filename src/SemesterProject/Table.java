@@ -1,8 +1,18 @@
 package SemesterProject;
 
 public class Table {
+	/**
+	 * The label for this table.
+	 */
 	private String label;
+	/**
+	 * The status of this table.
+	 */
 	private Status status;
+	/**
+	 * The size of the party seated at this table.
+	 */
+	private int party = 0;
 
 	/**
 	 * 
@@ -21,7 +31,6 @@ public class Table {
 	public String getLabel() {
 		return label;
 	}
-
 	/**
 	 * sets the label
 	 * @param label
@@ -37,13 +46,25 @@ public class Table {
 	public Status getStatus() {
 		return status;
 	}
-
 	/**
 	 * sets the status
 	 * @param status
 	 */
 	public void setStatus(Status status) {
 		this.status = status;
+	}
+
+	public void seatParty(int partySize) throws IllegalStateException {
+		if(status == Status.Ready){
+			party = partySize;
+			setStatus(Status.Ordering);
+		}
+		else throw new IllegalStateException("Cannot seat party while table has status "+status);
+	}
+
+	@Override
+	public String toString(){
+		return label+"("+status+")";
 	}
 
 	/**
