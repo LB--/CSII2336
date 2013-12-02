@@ -1,42 +1,47 @@
 package SemesterProject;
 
+/**
+ * Represents a restaurant server, e.g. a waiter or waitress.
+ * Each server is aware of which tables they are responsible for.
+ */
 public class Server {
-	
-	private String name;
-	private int [] tables;
-	
-	
 	/**
-	 * 
-	 * @param name of the the server
-	 * @param list of the tables
+	 * The name of this server.
 	 */
-	public Server(String name, int [] tables){
-		this.name = name;
-		this.tables = new int []{1, 2, 3, 4, 5, 6, 7, 8, 9, 
-				10, 11, 12, 13, 14, 15, 16, 17, 18};
-	}
-	
+	private String name;
 	/**
-	 * Sets the name
-	 * @param name
+	 * The tables this server is responsible for.
+	 */
+	private int[] tables;
+
+	/**
+	 * Constructs this server from a name and their associated tables.
+	 * @param name The name of this server.
+	 * @param tables The list of tables this server is responsible for.
+	 */
+	public Server(String name, int[] tables){
+		this.name = name;
+		this.tables = tables;
+	}
+
+	/**
+	 * Renames this server.
+	 * @param name The new name of this server.
 	 */
 	public void setName(String name){
 		this.name = name;
 	}
-	
+
 	/**
-	 * returns the name
-	 * @return the name
+	 * Returns this server's name.
+	 * @return The name of this server.
 	 */
 	public String getName(){
 		return name;
 	}
-	
-	/**
-	 * Modifies name
-	 */
+
+	@Override
 	public String toString(){
-		return name;
+		return name + ", responsible for tables "+Arrays.toString(tables);
 	}
 }

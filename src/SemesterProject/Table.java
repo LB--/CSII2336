@@ -1,7 +1,6 @@
 package SemesterProject;
 
 public class Table {
-
 	private String label;
 	private char status;
 
@@ -22,7 +21,7 @@ public class Table {
 	public String getLabel() {
 		return label;
 	}
-	
+
 	/**
 	 * sets the label
 	 * @param label
@@ -38,7 +37,7 @@ public class Table {
 	public char getStatus() {
 		return status;
 	}
-		
+
 	/**
 	 * sets the status
 	 * @param status
