@@ -1,7 +1,6 @@
 package SemesterProject;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 /**
@@ -48,5 +47,20 @@ public class Restaurant {
 				servers.add(new Server(name, tarr));
 			}
 		}
+	}
+
+	/**
+	 * Returns the menu for this restaurant.
+	 * @return The menu for this restaurant.
+	 */
+	public Menu getMenu(){
+		return menu;
+	}
+	/**
+	 * Prints the list of servers to the given print stream.
+	 * @param out The print stream to print the list of servers to.
+	 */
+	public void printServers(PrintStream out){
+		//...
 	}
 }
