@@ -1,5 +1,7 @@
 package SemesterProject;
 
+import java.util.Arrays;
+
 /**
  * Represents a restaurant server, e.g. a waiter or waitress.
  * Each server is aware of which tables they are responsible for.

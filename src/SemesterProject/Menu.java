@@ -97,9 +97,9 @@ public class Menu {
 			return price;
 		}
 
-		@override
+		@Override
 		public String toString(){
-			return n + ", costs $" + p;
+			return name + ", costs $" + price;
 		}
 	}
 }
