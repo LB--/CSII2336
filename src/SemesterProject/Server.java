@@ -27,6 +27,17 @@ public class Server {
 	}
 
 	/**
+	 * Returns whether this server is responsible for the given table or not.
+	 * @return Whether this server is responsible for the given table or not.
+	 */
+	public boolean responsibleFor(int tableNum){
+		for(int t : tables){
+			if(tableNum == t) return true;
+		}
+		return false;
+	}
+
+	/**
 	 * Renames this server.
 	 * @param name The new name of this server.
 	 */

@@ -50,6 +50,23 @@ public class Restaurant {
 	}
 
 	/**
+	 * Returns the server responsible for the given table.
+	 * @return The server responsible for the given table.
+	 */
+	public Server serverFor(Table t){
+		for(Map.Entry<Integer, Table> e : tables){
+			if(e.getValue() == t){
+				for(Server s : servers){
+					if(s.responsibleFor(e.getKey())){
+						return s;
+					}
+				}
+			}
+		}
+		throw new IllegalStateException();
+	}
+
+	/**
 	 * Returns the menu for this restaurant.
 	 * @return The menu for this restaurant.
 	 */

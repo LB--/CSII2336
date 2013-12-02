@@ -2,6 +2,10 @@ package SemesterProject;
 
 public class Table {
 	/**
+	 *
+	 */
+	Restaurant restaurant;
+	/**
 	 * The label for this table.
 	 */
 	private String label;
@@ -19,23 +23,39 @@ public class Table {
 	 * @param label of the table
 	 * @param status of the table
 	 */
-	public Table(String label, Status status) {
+	public Table(Restaurant r, String label){
+		restaurant = r;
 		this.label = label;
-		this.status = status;
+		status = Status.Ready;
+	}
+
+	/**
+	 * Returns the restaurant this table belongs to.
+	 * @return The restaurant this table belongs to.
+	 */
+	public Restaurant getRestaurant(){
+		return restaurant;
+	}
+	/**
+	 * Returns the server responsible for this table.
+	 * @return The server responsible for this table.
+	 */
+	public Server getServer(){
+		return restaurant.serverFor(this);
 	}
 
 	/**
 	 * returns the label
 	 * @return the label
 	 */
-	public String getLabel() {
+	public String getLabel(){
 		return label;
 	}
 	/**
 	 * sets the label
 	 * @param label
 	 */
-	public void setLabel(String label) {
+	public void setLabel(String label){
 		this.label = label;
 	}
 
@@ -43,14 +63,14 @@ public class Table {
 	 * returns the status
 	 * @return the status
 	 */
-	public Status getStatus() {
+	public Status getStatus(){
 		return status;
 	}
 	/**
 	 * sets the status
 	 * @param status
 	 */
-	public void setStatus(Status status) {
+	public void setStatus(Status status){
 		this.status = status;
 	}
 

@@ -1,27 +1,17 @@
 package SemesterProject;
 
-public class OrderActivity extends Activity
-{
-	public OrderActivity()
-	{
+public class OrderActivity extends Activity{
+	public OrderActivity(){
 		//...
 	}
 
 	@Override
-	public double processActivity()
-	{
+	public double processActivity(){
 		//..
 	}
 
 	@Override
-	public String getMessage(char c)
-	{
-		//...
-	}
-
-	@Override
-	public String toString()
-	{
+	public String toString(){
 		//...
 	}
 }

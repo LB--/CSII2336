@@ -1,27 +1,17 @@
 package SemesterProject;
 
-public class ServiceActivity extends Activity
-{
-	public ServiceActivity()
-	{
+public class ServiceActivity extends Activity{
+	public ServiceActivity(){
 		//...
 	}
 
 	@Override
-	public double processActivity()
-	{
+	public double processActivity(){
 		//..
 	}
 
 	@Override
-	public String getMessage(char c)
-	{
-		//...
-	}
-
-	@Override
-	public String toString()
-	{
+	public String toString(){
 		//...
 	}
 }

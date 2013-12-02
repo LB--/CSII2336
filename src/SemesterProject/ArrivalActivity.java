@@ -1,27 +1,17 @@
 package SemesterProject;
 
-public class ArrivalActivity extends Activity
-{
-	public ArrivalActivity()
-	{
+public class ArrivalActivity extends Activity{
+	public ArrivalActivity(){
 		//...
 	}
 
 	@Override
-	public double processActivity()
-	{
+	public double processActivity(){
 		//..
 	}
 
 	@Override
-	public String getMessage(char c)
-	{
-		//...
-	}
-
-	@Override
-	public String toString()
-	{
+	public String toString(){
 		//...
 	}
 }

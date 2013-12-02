@@ -1,27 +1,17 @@
 package SemesterProject;
 
-public class CheckActivity extends Activity
-{
-	public CheckActivity()
-	{
+public class CheckActivity extends Activity{
+	public CheckActivity(){
 		//...
 	}
 
 	@Override
-	public double processActivity()
-	{
+	public double processActivity(){
 		//..
 	}
 
 	@Override
-	public String getMessage(char c)
-	{
-		//...
-	}
-
-	@Override
-	public String toString()
-	{
+	public String toString(){
 		//...
 	}
 }
