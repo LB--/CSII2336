@@ -23,7 +23,7 @@ public abstract class Activity {
 	 * This method is implemented by deriving classes.
 	 * @return ???
 	 */
-	public abstract double processActivity();
+	public abstract void process();
 
 	/**
 	 * Retrieves the table associated with this activity.

@@ -1,13 +1,13 @@
 package SemesterProject;
 
-public class ServiceActivity extends Activity{
-	public ServiceActivity(){
-		//...
+public class ServiceActivity extends Activity {
+	public ServiceActivity(Restaurant r, int tableNum){
+		super(r.tableFor(tableNum));
 	}
 
 	@Override
-	public double processActivity(){
-		//..
+	public void process){
+		getTable().service();
 	}
 
 	@Override

@@ -52,10 +52,10 @@ public class RestaurantTester {
 								switch(command.charAt(0)){
 									case 'P': { //seat party
 										int party = Integer.parseInt(command.substring(1));
-										r.seatTable(table, party);
+										r.process(new ArrivalActivity(r, table, party));
 									} break;
 									case 'S': { //service
-										r.serviceTable(table);
+										r.process(new ServiceActivity(r, table));
 									} break;
 									case 'C': { //checkout
 										//

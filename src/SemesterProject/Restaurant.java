@@ -50,6 +50,12 @@ public class Restaurant {
 	}
 
 	/**
+	 *
+	 */
+	public Table tableFor(int tableNum){
+		return tables.get(tableNum);
+	}
+	/**
 	 * Returns the server responsible for the given table.
 	 * @return The server responsible for the given table.
 	 */
@@ -81,6 +87,12 @@ public class Restaurant {
 		//...
 	}
 
+	/**
+	 *
+	 */
+	public void process(Activity act){
+		act.process();
+	}
 	/**
 	 * ...
 	 */
