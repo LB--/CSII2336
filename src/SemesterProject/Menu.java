@@ -99,7 +99,7 @@ public class Menu {
 
 		@override
 		public String toString(){
-			return n + ", costs $"+p;
+			return n + ", costs $" + p;
 		}
 	}
 }

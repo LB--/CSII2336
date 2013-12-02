@@ -40,7 +40,11 @@ public class Restaurant {
 						tables.put(n, new Table("Table #"+n, Table.Status.Ready));
 					}
 				}
-				servers.add(new Server(name, (int[])t.toArray(new int[0])));
+				int[] tarr = new int[t.size()];
+				for(int i = 0; i < tarr.length; ++i){
+					tarr[i] = t.get(i);
+				}
+				servers.add(new Server(name, tarr));
 			}
 		}
 	}
