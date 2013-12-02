@@ -66,7 +66,7 @@ public class RestaurantTester {
 								}
 							} break;
 							case 2: break ActivityLoop; //quit
-							default: conditnue ActivityLoop; //invalid
+							default: continue ActivityLoop; //invalid
 						}
 					}
 				} break;
